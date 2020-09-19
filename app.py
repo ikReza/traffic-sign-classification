@@ -21,7 +21,7 @@ sign_labels = {0: "Speed limit (20km/h)", 1: "Speed limit (30km/h)", 2: "Speed l
 st.set_option("deprecation.showfileUploaderEncoding", False)
 @st.cache(allow_output_mutation=True)
 def load_model():
-    model = models.load_model("./contents/traffic_sign.hdf5")
+    model = models.load_model("traffic_sign.hdf5")
     
     return model
 
